@@ -4,12 +4,6 @@
   "parameters": {   
     "siteName": {
       "value": "GEN-UNIQUE"
-    }, 
-    "dbAdministratorLogin": {
-      "value": "GEN-UNIQUE"
-    },
-    "dbAdministratorLoginPassword": {
-      "value": "GEN-PASSWORD"
     }
   }
 }

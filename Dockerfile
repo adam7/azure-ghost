@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install \
       git \
       && echo "root:Docker!" | chpasswd
 
+ENV GHOST_CONTENT /home/site/wwwroot
+
 # Creating folder so that image won't fail in non-azure
 RUN mkdir -p /home/LogFiles
 

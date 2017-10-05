@@ -1,4 +1,6 @@
-> In Development, don't use unless you don't mind losing data!
+http://forthebadge.com/images/badges/winter-is-coming.svg
+
+> This is an experiment it's unstable on a good day!
 
 ---
 
@@ -14,7 +16,6 @@ GitHub : https://github.com/adam7/azure-ghost
 [![Azure Deploy](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fadam7%2fazure-ghost%2fmaster%2fazuredeploy.json)
 
 #### Required App Settings
-- GHOST_CONTENT /home/site/wwwroot
 - GHOST_URL
 
 #### Contributors

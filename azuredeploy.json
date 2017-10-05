@@ -23,10 +23,6 @@
                             "value": "prashanthmadi/azure-ghost:latest"
                         },
                         {
-                            "name": "GHOST_CONTENT",
-                            "value": "/home/site/wwwroot"
-                        },
-                        {
                             "name": "GHOST_URL",
                             "value": "[concat('http://',parameters('siteName'),'.azurewebsites.net')]"
                         }

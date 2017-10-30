@@ -14,7 +14,6 @@ RUN mkdir -p /home/LogFiles
 # Copy config and shell scripts to the right place
 COPY sshd_config /etc/ssh/
 COPY init-container.sh /bin/
-COPY migrate_util.sh /bin/
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf	
 
 # Expose the port for ssh access from kudu

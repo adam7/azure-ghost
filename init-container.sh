@@ -3,7 +3,7 @@ echo "************ Delete the azure placeholder html ***********"
 [ -e "/home/site/wwwroot/hostingstart.html" ] && rm "/home/site/wwwroot/hostingstart.html"
 
 echo "************ Configure ghost to point to the persistent content ***********"
-gosu node ghost config --db="sqlite3" --dbpath="/home/site/wwwroot/content/data/ghost.db"
+gosu node ghost config --db="sqlite3" --dbpath="/home/site/wwwroot/content/data/ghost.db" --no-prompt
 gosu node ghost config paths.contentPath "/home/site/wwwroot/content"
 gosu node ghost config server.host 0.0.0.0
 

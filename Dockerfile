@@ -1,4 +1,4 @@
-FROM ghost:1.7
+FROM ghost:1.14
 
 # Install openssh for web-ssh access from kudu
 RUN apt-get update && apt-get install \
@@ -12,9 +12,8 @@ RUN apt-get update && apt-get install \
 RUN mkdir -p /home/LogFiles
 
 COPY sshd_config /etc/ssh/
-COPY init-container.sh /bin/
-COPY migrate_util.sh /bin/
+COPY init-container.sh /usr/local/bin
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf	
 
-EXPOSE 2222
-CMD ["/bin/init-container.sh"]
+# EXPOSE 2222
+CMD ["init-container.sh"]

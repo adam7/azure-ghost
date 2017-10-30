@@ -2,7 +2,7 @@
 [ -e "/home/site/wwwroot/hostingstart.html" ] && rm "/home/site/wwwroot/hostingstart.html"
 echo "************started migration***********"
 # move content if it doesn't exist
-if ! [ "$(ls -A /home/site/wwwroot)" ]; then
+if ! [ "$(ls -A /home/site/wwwroot/content)" ]; then
 	baseDir="$GHOST_INSTALL/content.orig"
 	for src in "$baseDir"/*/ "$baseDir"/themes/*; do
 		src="${src%/}"
